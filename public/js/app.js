@@ -25163,6 +25163,8 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25183,7 +25185,7 @@ var Home = function (_Component) {
     }
 
     _createClass(Home, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             var users = [{
                 name: "Urip",
@@ -25196,48 +25198,48 @@ var Home = function (_Component) {
                 address: "Singapadu"
             }];
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
+                'div',
                 null,
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "button",
-                    { className: "btn btn-primary" },
-                    "Add"
+                    'button',
+                    { className: 'btn btn-primary' },
+                    'Add'
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "table",
-                    { className: "table table-hover" },
+                    'table',
+                    { className: 'table table-hover' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "thead",
+                        'thead',
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "tr",
+                            'tr',
                             null,
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                "th",
+                                'th',
                                 null,
-                                "Nama"
+                                'Nama'
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                "th",
+                                'th',
                                 null,
-                                "Alamat"
+                                'Alamat'
                             )
                         )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "tbody",
+                        'tbody',
                         null,
                         users.map(function (user, i) {
                             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                "tr",
+                                'tr',
                                 { key: i },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    "td",
+                                    'td',
                                     null,
                                     user.name
                                 ),
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                    "td",
+                                    'td',
                                     null,
                                     user.address
                                 )
