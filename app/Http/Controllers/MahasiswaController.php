@@ -72,7 +72,10 @@ class MahasiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $mahasiswa= Mahasiswas::find($id);
+        $mahasiswa->name=$request->get('name');
+        $mahasiswa->address=$request->get('address');
+        $mahasiswa->save();
     }
 
     /**
@@ -83,6 +86,7 @@ class MahasiswaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $mahasiswa= Mahasiswas::find($id);
+        $mahasiswa->delete();
     }
 }
