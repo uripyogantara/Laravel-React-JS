@@ -18,6 +18,7 @@ export class Home extends Component{
         ]
         return(
             <div>
+                <button className="btn btn-primary">Add</button>
                 <table className="table table-hover">
                     <thead>
                         <tr>
